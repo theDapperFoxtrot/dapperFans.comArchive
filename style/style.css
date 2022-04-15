@@ -48,10 +48,14 @@ header img {
 
 section p {
     font-size: 1.8rem;
+    max-width: 600px;
 }
 
 .main {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .steveProfile {
@@ -96,6 +100,7 @@ footer {
 
 footer p {
     font-size: 2rem;
+    margin: 10px auto;
 }
 
 @media (max-width: 440px) {
