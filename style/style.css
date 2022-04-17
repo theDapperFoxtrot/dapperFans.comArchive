@@ -355,6 +355,12 @@ header img {
   border-radius: 40%;
 }
 
+h3 {
+  text-align: center;
+  position: relative;
+  bottom: 0;
+}
+
 .stackContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -363,19 +369,17 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   margin: 0 0 100px 0;
 }
 
-h3 {
-  text-align: center;
-  position: relative;
-  bottom: 0;
+.individualStack {
+  margin: 0 5px;
 }
 
 .stackIcon {
@@ -430,10 +434,14 @@ h3 {
   .steveProfile {
     max-width: 40%;
   }
+
+  .individualStack {
+    margin: 0 20px;
+  }
 }
 @media (min-width: 602px) {
   .stackContainer {
-    margin: 160px 0;
+    margin: 0 0 160px 0;
   }
 }
 @media (min-width: 1068px) {
