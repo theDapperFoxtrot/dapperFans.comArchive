@@ -258,7 +258,7 @@ section p {
 }
 
 section img {
-  margin: 20px auto;
+  margin: 0 auto;
   max-width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -277,6 +277,10 @@ section a:hover, section a:focus {
 
 section a:active {
   background-color: #ab1b1b;
+}
+
+h1 {
+  margin: 0 auto;
 }
 
 h2 {
@@ -430,11 +434,7 @@ h3 {
 }
 
 .portfolio-container a {
-  max-width: 320px;
-}
-
-.lastPortfolio {
-  margin-bottom: 120px;
+  max-width: 602px;
 }
 
 footer {
@@ -523,7 +523,7 @@ footer p {
   }
 
   .portfolio-container a {
-    max-width: 600px;
+    max-width: 1100px;
   }
 }
 @media (min-width: 1068px) {
