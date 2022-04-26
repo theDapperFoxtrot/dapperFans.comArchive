@@ -2,9 +2,9 @@ theMeesh = {}
 
 theMeesh.copyEmail = () => {
   let myEmail = document.querySelector('#myEmail').innerText;
-  document.addEventListener('click', async function() {
+  document.addEventListener('click', function() {
     navigator.clipboard
-    .writeText(myEmail)
+    .writeText('mishos.steve@gmail.com')
   })
 }
 
