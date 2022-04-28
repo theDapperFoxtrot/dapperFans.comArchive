@@ -242,12 +242,10 @@ html {
 }
 
 body {
-  -webkit-animation: radial-gradient 1s ease infinite;
-          animation: radial-gradient 1s ease infinite;
-  color: rgb(241, 241, 241);
+  color: #f1f1f1;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  background: radial-gradient(ellipse at top, rgb(0, 0, 0) 60%, rgb(70, 0, 99) 100%);
+  background: radial-gradient(ellipse at top, #000000 60%, #460063 100%);
   overflow-x: hidden;
 }
 
@@ -271,8 +269,8 @@ section img {
 }
 
 section a:hover, section a:focus {
-  opacity: 50%;
-  background-color: #fff;
+  color: #000000;
+  background-color: #f1f1f1;
 }
 
 section a:active {
@@ -303,6 +301,9 @@ header .container {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 97.5%;
 }
 
@@ -382,7 +383,7 @@ h3 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin: 0 0 20px 0;
+  margin: 20px 0 70px 0;
   list-style: none;
 }
 
@@ -400,7 +401,7 @@ h3 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin: 0 0 100px 0;
+  margin: 0 0 40px 0;
   list-style: none;
 }
 
@@ -411,12 +412,11 @@ h3 {
 }
 
 .stackIcon {
-  background-color: rgba(0, 0, 0, 0.3568627451);
   border-radius: 10%;
 }
 
 i {
-  color: #460063;
+  color: #f1f1f1;
   font-size: 6rem;
 }
 
@@ -424,7 +424,43 @@ i {
   text-align: center;
 }
 
+.portfolioLinkContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolioLink {
+  color: #f1f1f1;
+  background-color: #460063;
+  font-size: 2rem;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+  border-radius: 50%;
+}
+
 .aboutMeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.aboutMeContentContainer {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,11 +472,16 @@ i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 310px;
+  min-width: 300px;
+  max-width: 330px;
 }
 
 .aboutMeContainer p {
   margin: 10px 0;
+}
+
+.aboutPics {
+  display: none;
 }
 
 .portfolio-container {
@@ -460,6 +501,21 @@ i {
   max-width: 602px;
 }
 
+.demoButtons {
+  margin: 30px;
+}
+
+.portButtons {
+  color: #f1f1f1;
+  background-color: #460063;
+  font-size: 2rem;
+  text-decoration: none;
+  text-align: center;
+  margin: 10px;
+  padding: 7.5px 15px;
+  border-radius: 10%;
+}
+
 footer {
   margin: 20px auto;
   max-width: 1500px;
@@ -472,7 +528,7 @@ footer p {
 }
 
 .mainFooter {
-  margin: 300px auto 0 auto;
+  margin: 80px auto 0 auto;
 }
 
 .myEmail {
@@ -513,7 +569,7 @@ footer p {
 }
 
 .socialsContainer a:hover > li {
-  background-color: #fff;
+  background-color: #f1f1f1;
   cursor: pointer;
 }
 
@@ -531,24 +587,29 @@ footer p {
   font-size: 1rem;
 }
 
+@media (min-width: 372px) {
+  .individualStack {
+    margin: 0 2%;
+  }
+}
 @media (min-width: 512px) {
   .steveProfile {
     max-width: 40%;
   }
 
   .individualStack {
-    margin: 0 3%;
+    margin: 0 4%;
   }
 
   .aboutMeContainer {
-    max-width: 420px;
+    max-width: 400px;
   }
 
   .mainFooter {
-    margin: 345px auto 0 auto;
+    margin: 70px auto 0 auto;
   }
 }
-@media (min-width: 602px) {
+@media (min-width: 621px) {
   .stackContainer {
     margin: 0 0 180px 0;
   }
@@ -558,12 +619,53 @@ footer p {
   }
 
   .mainFooter {
-    margin: 385px auto 0 auto;
+    margin: 0px auto 0 auto;
+  }
+
+  h3 {
+    font-size: 4rem;
+  }
+
+  .demoButtons {
+    margin: 30px;
+  }
+
+  .portButtons {
+    color: #f1f1f1;
+    background-color: #460063;
+    font-size: 3rem;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    padding: 15px 50px;
+    border-radius: 10%;
   }
 }
 @media (min-width: 1068px) {
   .steveProfile {
     max-width: 33%;
+  }
+
+  .aboutMeContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+
+  .aboutPics {
+    display: block;
+    margin: auto 5%;
   }
 }
 .active {
