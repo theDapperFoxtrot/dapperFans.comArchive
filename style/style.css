@@ -320,7 +320,6 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  margin-bottom: 5px;
 }
 
 header .container {
@@ -336,7 +335,7 @@ header .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 97.5%;
+  max-width: 100%;
 }
 
 header img {
@@ -624,6 +623,10 @@ footer p {
   width: 30px;
 }
 
+.portfolioHeader {
+  margin: 50px 0 20px 0;
+}
+
 .demoButtons {
   width: 200px;
   margin: 40px 0;
@@ -700,6 +703,7 @@ footer p {
     -webkit-transform: translateY(-300px);
             transform: translateY(-300px);
     margin: 0 20px;
+    border-radius: 10px;
   }
 }
 .active {
