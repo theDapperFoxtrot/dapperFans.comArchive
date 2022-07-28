@@ -68,6 +68,34 @@
             alt="picture of steve"
           />
         </div>
+        <div class="media-container">
+          <p>Media</p>
+          <iframe
+            class="youTube-video"
+            src="https://www.youtube.com/embed/54Bs751G_ds"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p>Recoreded 2022-07-28</p>
+          <p>Catch me live!</p>
+          <!-- placeholder for the Twitch embed -->
+          <div class="twitch-embed" id="twitch-embed"></div>
+        </div>
+
+        <!-- Twitch embed JavaScript file -->
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+        <!-- Twitch.Embed object that will render within the "twitch-embed" element -->
+        <script type="text/javascript">
+          new Twitch.Embed("twitch-embed", {
+            width: 280,
+            height: 600,
+            muted: true,
+            channel: "theDapperFoxtrot",
+          });
+        </script>
         <h3 tabindex="0">My Toolkit</h3>
         <ul class="stackContainer">
           <div class="upperStack">
@@ -155,14 +183,6 @@
                   alt="the dapper foxtrot twitter"
                 /></li
             ></a>
-            <!-- <a href="https://www.linkedin.com/in/stevemishos/" target="_blank"
-              ><li class="socialIcon">
-                <img
-                  class="socialImage"
-                  src="./assets/svg/linkedin-in-brands.svg"
-                  alt="the dapper foxtrot linked in"
-                /></li
-            ></a> -->
             <a href="https://github.com/theDapperFoxtrot" target="_blank"
               ><li class="socialIcon">
                 <img
