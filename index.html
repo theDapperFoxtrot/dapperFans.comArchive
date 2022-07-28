@@ -79,6 +79,7 @@
             allowfullscreen
           ></iframe>
           <p>Recoreded 2022-07-28</p>
+          <p>OR</p>
           <p>Catch me live!</p>
           <!-- placeholder for the Twitch embed -->
           <div class="twitch-embed" id="twitch-embed"></div>
@@ -90,9 +91,10 @@
         <!-- Twitch.Embed object that will render within the "twitch-embed" element -->
         <script type="text/javascript">
           new Twitch.Embed("twitch-embed", {
-            width: 280,
-            height: 600,
+            width: 1920,
+            height: 1080,
             muted: true,
+            theme: "dark",
             channel: "theDapperFoxtrot",
           });
         </script>

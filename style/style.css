@@ -418,9 +418,12 @@ header img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 
 .twitch-embed {
+  width: 280px;
   margin: 1rem 0 5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,6 +431,8 @@ header img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 
 h3 {
@@ -749,30 +754,12 @@ footer p {
   .steveProfile {
     max-width: 40%;
   }
-  .media-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .youTube-video {
-    max-width: none;
-    margin: 1rem auto;
+    width: 80%;
+    height: 300px;
   }
   .twitch-embed {
-    margin: 1rem 0 5rem 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 80%;
   }
   .individualStack {
     margin: 0 3%;
@@ -799,6 +786,10 @@ footer p {
   .steveProfile {
     max-width: 33%;
   }
+  .youTube-video {
+    width: 80%;
+    height: 500px;
+  }
   .aboutMeContainer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -819,31 +810,12 @@ footer p {
     border-radius: 10px;
   }
 }
-.active {
-  display: block;
-  animation: fadeIn 1s;
-  -webkit-animation: fadeIn 1s;
-  -moz-animation: fadeIn 1s;
-  -o-animation: fadeIn 1s;
-  -ms-animation: fadeIn 1s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0.5;
+@media (min-width: 1368px) {
+  .youTube-video {
+    width: 95%;
+    height: 1000px;
   }
-  100% {
-    opacity: 1;
+  .twitch-embed {
+    width: 95%;
   }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.inactive {
-  display: none;
 }
