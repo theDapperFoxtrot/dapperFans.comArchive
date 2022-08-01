@@ -651,22 +651,6 @@ footer p {
   margin: 50px auto 0 auto;
 }
 
-.myEmail {
-  margin: 10px 0;
-}
-
-.myEmail:hover {
-  cursor: pointer;
-}
-
-.myEmail:active {
-  color: #ab1b1b;
-}
-
-.myEmail:hover::after {
-  content: " (Click to copy)";
-}
-
 .socialsContainer ul {
   display: -webkit-box;
   display: -ms-flexbox;
