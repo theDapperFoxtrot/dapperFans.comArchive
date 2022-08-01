@@ -281,7 +281,7 @@ body {
   color: rgb(241, 241, 241);
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  background: radial-gradient(ellipse at top, rgb(0, 0, 0) 60%, rgb(70, 0, 99) 100%);
+  background: radial-gradient(ellipse at top, rgb(0, 0, 0) 60%, #5e0cc2 100%);
   overflow-x: hidden;
 }
 
@@ -489,7 +489,7 @@ h3 {
 }
 
 i {
-  color: #460063;
+  color: #5e0cc2;
   font-size: 6rem;
 }
 
@@ -509,7 +509,7 @@ i {
 .portfolioLinkbg {
   width: 120px;
   height: 70px;
-  background-color: #460063;
+  background-color: #5e0cc2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -576,7 +576,7 @@ form input {
 form button {
   font-size: 2rem;
   text-decoration: none;
-  background-color: #460063;
+  background-color: #5e0cc2;
   padding: 20px;
   border-radius: 40px;
   color: #f1f1f1;
@@ -681,7 +681,7 @@ footer p {
 }
 
 .socialsContainer li {
-  background-color: #460063;
+  background-color: #5e0cc2;
   border-radius: 50%;
   list-style: none;
   margin: 10px 10px;
@@ -735,7 +735,7 @@ footer p {
 .portButtons {
   font-size: 2rem;
   text-decoration: none;
-  background-color: #460063;
+  background-color: #5e0cc2;
   padding: 20px;
   border-radius: 40px;
   color: #f1f1f1;
@@ -756,11 +756,11 @@ footer p {
     max-width: 40%;
   }
   .youTube-video {
-    width: 80%;
+    width: 45%;
     height: 300px;
   }
   .twitch-embed {
-    width: 80%;
+    width: 45%;
   }
   .individualStack {
     margin: 0 3%;
@@ -788,8 +788,8 @@ footer p {
     max-width: 33%;
   }
   .youTube-video {
-    width: 80%;
-    height: 500px;
+    width: 50%;
+    height: 300px;
   }
   .aboutMeContainer {
     -webkit-box-orient: horizontal;
@@ -813,10 +813,10 @@ footer p {
 }
 @media (min-width: 1368px) {
   .youTube-video {
-    width: 95%;
-    height: 1000px;
+    width: 50%;
+    height: 500px;
   }
   .twitch-embed {
-    width: 95%;
+    width: 50%;
   }
 }
