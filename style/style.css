@@ -487,6 +487,15 @@ header img {
   background-color: rgba(0, 0, 0, 0);
 }
 
+.titleLink {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.titleLink:hover {
+  color: #f1f1f1;
+}
+
 .title {
   font-size: 3rem;
   text-align: left;
