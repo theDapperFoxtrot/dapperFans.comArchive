@@ -326,11 +326,14 @@ header .container {
   -ms-flex-direction: row;
   flex-direction: column;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100vh;
+  width: 100%;
   position: absolute;
 }
 
@@ -339,20 +342,22 @@ header img {
 }
 
 .menu {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
   z-index: 1;
   left: 99rem;
 }
 
 .menu-active {
-  left: 0rem;
+  left: calc(50vw - 12.5rem);
 }
 
 .menu ul {
@@ -363,7 +368,7 @@ header img {
 }
 
 .menu li {
-  margin: 10px 0;
+  margin: 1rem 0;
   text-align: center;
 }
 
