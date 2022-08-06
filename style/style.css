@@ -17,11 +17,6 @@ section {
   display: block;
 }
 
-.sidebar-image {
-  width: 50px;
-  border-radius: 40%;
-}
-
 figcaption,
 figure,
 main {
@@ -309,7 +304,7 @@ section a:active {
 }
 
 h1 {
-  margin: 10px auto;
+  margin: 1rem 0 0 0;
   font-size: 3.5rem;
 }
 
@@ -335,15 +330,36 @@ header .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 100%;
+  height: 100vh;
+  position: absolute;
 }
 
 header img {
   max-width: 100%;
 }
 
+.menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  z-index: 1;
+  left: 99rem;
+}
+
+.menu-active {
+  left: 0rem;
+}
+
 .menu ul {
   list-style: none;
+  padding: 5rem;
+  background-color: #000;
+  border-radius: 10%;
 }
 
 .menu li {
@@ -376,10 +392,98 @@ header img {
   color: #ab1b1b;
 }
 
+.hamburger-container {
+  width: 4rem;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.151);
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 1.9rem;
+  right: 0.5rem;
+  width: 3rem;
+  height: 0.2rem;
+  background-color: white;
+}
+
+.hamburger-menu::after {
+  position: absolute;
+  content: "";
+  width: 3rem;
+  height: 0.2rem;
+  background-color: white;
+  cursor: pointer;
+  top: 1rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hamburger-menu::before {
+  position: absolute;
+  content: "";
+  width: 3rem;
+  height: 0.2rem;
+  background-color: white;
+  cursor: pointer;
+  top: -1rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hamburger-container {
+  width: 4rem;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: fixed;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.1529411765);
+  cursor: pointer;
+}
+
+.hamburger-background {
+  background-color: rgba(255, 255, 255, 0.431372549);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.hamburger-active .hamburger-menu::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+
+.hamburger-active .hamburger-menu::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+}
+
+.hamburger-active .hamburger-menu {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .title {
   font-size: 3rem;
-  text-align: center;
-  margin: 0 auto;
+  text-align: left;
+  margin: 0 0 0 1rem;
 }
 
 .steveProfile {
@@ -410,7 +514,7 @@ header img {
 }
 
 .youTube-video {
-  width: 280px;
+  width: 28rem;
   margin: 1rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -538,7 +642,21 @@ i {
   color: #000;
 }
 
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 form input {
+  margin: 1rem 0;
   padding: 0 3px 0 3px;
   background-color: #000;
   color: #f1f1f1;
@@ -546,10 +664,22 @@ form input {
 
 .formLabels {
   font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10%;
+  max-width: 31rem;
 }
 
 .formRoleSelect select {
-  margin: 10px auto 0 auto;
+  margin: 10px 0 0 0;
   display: block;
   overflow: hidden;
   width: -webkit-max-content;
@@ -564,7 +694,7 @@ form input {
 }
 
 .formMessage textarea {
-  margin: 10px auto 0 auto;
+  margin: 10px 0 0 0;
   padding: 0 3px 0 3px;
   display: block;
   width: 300px;
@@ -735,16 +865,21 @@ footer p {
   font-size: 1rem;
 }
 
+@media (min-width: 345px) {
+  .title {
+    text-align: center;
+  }
+}
 @media (min-width: 512px) {
   .steveProfile {
     max-width: 40%;
   }
   .youTube-video {
-    width: 45%;
-    height: 300px;
+    width: 35rem;
+    height: 20rem;
   }
   .twitch-embed {
-    width: 45%;
+    width: 35rem;
   }
   .individualStack {
     margin: 0 3%;
@@ -772,8 +907,11 @@ footer p {
     max-width: 33%;
   }
   .youTube-video {
-    width: 50%;
-    height: 300px;
+    width: 90rem;
+    height: 50rem;
+  }
+  .twitch-embed {
+    width: 90rem;
   }
   .aboutMeContainer {
     -webkit-box-orient: horizontal;
@@ -793,14 +931,5 @@ footer p {
             transform: translateY(-300px);
     margin: 0 20px;
     border-radius: 10px;
-  }
-}
-@media (min-width: 1368px) {
-  .youTube-video {
-    width: 50%;
-    height: 500px;
-  }
-  .twitch-embed {
-    width: 50%;
   }
 }

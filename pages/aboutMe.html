@@ -39,20 +39,24 @@
   </head>
   <body>
     <header>
+      <div class="title">
+        <h1>DapperFans.com</h1>
+      </div>
       <div class="container">
-        <div class="title">
-          <h1>DapperFans.com</h1>
-          <hr />
-          <h2>Work in progress...</h2>
-          <h2>stay tuned!</h2>
-        </div>
-        <nav class="menu">
+        <nav id="menu" class="menu">
           <ul>
             <li><a href="../index.html" id="homeNav">Home</a></li>
-            <li><a href="./aboutMe.html" id="aboutNav">About Steve</a></li>
-            <li><a href="./portfolio.html" id="portfolioNav">Portfolio</a></li>
+            <li>
+              <a href="./aboutMe.html" id="aboutNav">About Steve</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" id="portfolioNav">Portfolio</a>
+            </li>
           </ul>
         </nav>
+        <div id="hamburger" class="hamburger-container">
+          <div class="hamburger-menu"></div>
+        </div>
       </div>
     </header>
     <div id="aboutPage">
@@ -174,5 +178,6 @@
         <p class="tinyFont">Made with HTML, CSS, and Vanilla JS</p>
       </footer>
     </div>
+    <script src="../scripts/script.js"></script>
   </body>
 </html>
