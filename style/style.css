@@ -354,7 +354,7 @@ header img {
           align-items: center;
   position: fixed;
   z-index: 1;
-  left: 99rem;
+  left: 9999rem;
 }
 
 .menu-active {
