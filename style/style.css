@@ -335,6 +335,7 @@ header .container {
   height: 100vh;
   width: 100%;
   position: absolute;
+  z-index: 0;
 }
 
 header img {
@@ -357,6 +358,7 @@ header img {
 }
 
 .menu-active {
+  top: calc(50vh - 12.5rem);
   left: calc(50vw - 12.5rem);
 }
 
@@ -748,6 +750,7 @@ form button:hover {
 
 .aboutHeader {
   margin: 50px 0 20px 0;
+  text-align: center;
 }
 
 .aboutPics {
