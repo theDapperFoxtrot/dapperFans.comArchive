@@ -25,77 +25,100 @@
 		<link rel="stylesheet" href="./style/style.css" />
 	</head>
 	<body>
-		<header>
-			<a class="titleLink" href="https://dapperfans.com/"><h1>DapperFans.com</h1></a>
-			<nav id="menu" class="menu">
-				<ul>
-					<li><a href="./index.html" id="homeNav">Home</a></li>
-					<li>
-						<a href="./pages/aboutMe.html" id="aboutNav">About Steve</a>
-					</li>
-				</ul>
-			</nav>
-			<div id="hamburger" class="hamburger-container">
-				<div class="hamburger-menu"></div>
-			</div>
-		</header>
-		<div class="active" id="homePage">
-			<section>
-				<div>
-					<img class="steveProfile" src="./assets/images/motion-profile-cropped.gif" alt="picture of steve" />
-				</div>
-			</section>
-			<footer class="mainFooter">
-				<h2>Contact Me!</h2>
-				<form name="contact" method="POST" data-netlify="true">
-					<p>
-						<label class="formLabels">Your Name: <input type="text" name="name" /></label>
-					</p>
-					<p>
-						<label class="formLabels">Your Email: <input type="email" name="email" /></label>
-					</p>
-					<p class="formRoleSelect">
-						<label class="formLabels"
-							>Your Role:
-							<select name="role[]">
-								<option value="client">Client</option>
-								<option value="follower">Follower</option>
-								<option value="recruiter">Recruiter</option>
-							</select></label
-						>
-					</p>
-					<p class="formMessage">
-						<label class="formLabels">Message: <textarea name="message"></textarea></label>
-					</p>
-					<p>
-						<button class="formButton" type="submit">Send</button>
-					</p>
-				</form>
-
-				<div class="socialsContainer">
+		<main>
+			<header>
+				<a class="titleLink" href="https://dapperfans.com/"><h1>DapperFans.com</h1></a>
+				<nav id="menu" class="menu">
 					<ul>
-						<a href="https://twitter.com/FoxtrotDapper" target="_blank"
-							><li class="socialIcon">
-								<img class="socialImage" src="./assets/svg/twitter-brands.svg" alt="the dapper foxtrot twitter" /></li
-						></a>
-						<a href="https://github.com/theDapperFoxtrot" target="_blank"
-							><li class="socialIcon">
-								<img class="socialImage" src="./assets/svg/github-brands.svg" alt="the dapper foxtrot git hub" /></li
-						></a>
-						<a href="https://www.youtube.com/@thedapperfoxtrot" target="_blank"
-							><li class="socialIcon">
-								<img class="socialImage" src="./assets/svg/icons8-youtube-64.svg" alt="the dapper foxtrot on YouTube" /></li
-						></a>
-						<a href="https://www.twitch.tv/thedapperfoxtrot" target="_blank"
-							><li class="socialIcon">
-								<img class="socialImage" src="./assets/svg/icons8-twitch-50.svg" alt="the dapper foxtrot on Twitch" /></li
-						></a>
+						<li><a href="./index.html" id="homeNav">Home</a></li>
+						<li>
+							<a href="./pages/aboutMe.html" id="aboutNav">About Steve</a>
+						</li>
 					</ul>
-				</div>
-				<p>© Copyright 2022 The Dapper Foxtrot. All Rights Reserved.</p>
-				<p class="tinyFont">Made with HTML, CSS, and Vanilla JS</p>
-			</footer>
-		</div>
+				</nav>
+				<!-- <div id="hamburger" class="hamburger-container">
+					<div class="hamburger-menu"></div>
+				</div> -->
+			</header>
+			<div class="active" id="homePage">
+				<section>
+					<div>
+						<img class="steveProfile" src="./assets/images/motion-profile-cropped.gif" alt="picture of steve" />
+					</div>
+				</section>
+				<section>
+					<div class="title">
+						<h2 class="aboutHeader">About Dapper</h2>
+					</div>
+					<div class="aboutMeContainer">
+						<img class="aboutPics" src="../assets/images/Screenshot 2021-08-15 225848.jpg" alt="" />
+						<div class="aboutMeContentContainer">
+							<p>Thanks for taking the time to get to know me better. I'm Steve! A budding web developer who's passionate about technology, especially as it pertains to software engineering and design.</p>
+							<br />
+							<p>As a young gamer, I was quickly exposed to the hardware that powered many captivating experiences. My curiosity of the "HOW?!" was rampant, and growing up with the Internet was especially helpful in answering those questions. Software!</p>
+							<br />
+							<p>While I didn't have the appreciation of how crucial mathematics played a role in many of these experiences, I have retroactively studied and honed my abilities to nurture the developer I have always dreamed of being.</p>
+							<br />
+							<p>The more I learn, the more I discover the endless possibilities at my fingertips. I'm enthusiastic about the future, excited by the constant need to learn and adapt to new ways of achieving amazing solutions.</p>
+							<br />
+							<p>I look forward to working with you!</p>
+						</div>
+						<img class="aboutPics" src="../assets/images/steve.jpg" alt="" />
+					</div>
+				</section>
+
+				<footer class="mainFooter">
+					<h2>Contact Me!</h2>
+					<form name="contact" method="POST" data-netlify="true">
+						<p>
+							<label class="formLabels">Your Name: <input type="text" name="name" /></label>
+						</p>
+						<p>
+							<label class="formLabels">Your Email: <input type="email" name="email" /></label>
+						</p>
+						<p class="formRoleSelect">
+							<label class="formLabels"
+								>Your Role:
+								<select name="role[]">
+									<option value="client">Client</option>
+									<option value="follower">Follower</option>
+									<option value="recruiter">Recruiter</option>
+								</select></label
+							>
+						</p>
+						<p class="formMessage">
+							<label class="formLabels">Message: <textarea name="message"></textarea></label>
+						</p>
+						<p>
+							<button class="formButton" type="submit">Send</button>
+						</p>
+					</form>
+
+					<div class="socialsContainer">
+						<ul>
+							<a href="https://twitter.com/FoxtrotDapper" target="_blank"
+								><li class="socialIcon">
+									<img class="socialImage" src="./assets/svg/twitter-brands.svg" alt="the dapper foxtrot twitter" /></li
+							></a>
+							<a href="https://github.com/theDapperFoxtrot" target="_blank"
+								><li class="socialIcon">
+									<img class="socialImage" src="./assets/svg/github-brands.svg" alt="the dapper foxtrot git hub" /></li
+							></a>
+							<a href="https://www.youtube.com/@thedapperfoxtrot" target="_blank"
+								><li class="socialIcon">
+									<img class="socialImage" src="./assets/svg/icons8-youtube-64.svg" alt="the dapper foxtrot on YouTube" /></li
+							></a>
+							<a href="https://www.twitch.tv/thedapperfoxtrot" target="_blank"
+								><li class="socialIcon">
+									<img class="socialImage" src="./assets/svg/icons8-twitch-50.svg" alt="the dapper foxtrot on Twitch" /></li
+							></a>
+						</ul>
+					</div>
+					<p>© Copyright 2022 The Dapper Foxtrot. All Rights Reserved.</p>
+					<p class="tinyFont">Made with HTML, CSS, and Vanilla JS</p>
+				</footer>
+			</div>
+		</main>
 		<script src="./scripts/script.js"></script>
 	</body>
 </html>

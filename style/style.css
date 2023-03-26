@@ -294,11 +294,6 @@ body {
 	font-family: "Oswald", sans-serif;
 	font-weight: 400;
 	overflow-x: hidden;
-	height: 100dvh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 }
 
 header {
@@ -306,11 +301,6 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-.titleLink {
-	position: absolute;
-	top: 0;
 }
 
 .about-page {
