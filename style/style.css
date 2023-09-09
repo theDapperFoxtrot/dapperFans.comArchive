@@ -344,6 +344,10 @@ h3 {
 	font-size: 2rem;
 }
 
+.command-heading {
+	text-decoration: underline;
+}
+
 header .container {
 	display: -webkit-box;
 	display: -ms-flexbox;
